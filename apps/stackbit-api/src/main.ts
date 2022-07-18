@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { Message } from '@stackbit/api-interfaces';
+import { Message } from '@stackbit/types';
 
 const app = express();
 

@@ -1,12 +1,12 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/stackbit-app-e2e/src",
+  "sourceRoot": "apps/e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/stackbit-app-e2e/cypress.json",
+        "cypressConfig": "apps/e2e/cypress.json",
         "devServerTarget": "stackbit-app:serve:development"
       },
       "configurations": {
@@ -19,7 +19,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/stackbit-app-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/e2e/**/*.{js,ts}"]
       }
     }
   },

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Message } from '@stackbit/api-interfaces';
+import { Message } from '@stackbit/types';
 
 export const App = () => {
   const [m, setMessage] = useState<Message>({ message: '' });

@@ -2,9 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "api": "apps/api",
-    "api-interfaces": "libs/api-interfaces",
+    "e2e": "apps/e2e",
+    "stackbit-api": "apps/stackbit-api",
     "stackbit-app": "apps/stackbit-app",
-    "stackbit-app-e2e": "apps/stackbit-app-e2e"
+    "types": "libs/types"
   }
 }
