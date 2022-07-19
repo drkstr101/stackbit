@@ -5,16 +5,12 @@
   "targets": {
     "build": {
       "executor": "@nrwl/js:swc",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/cms/core",
         "main": "libs/cms/core/src/index.js",
         "tsConfig": "libs/cms/core/tsconfig.lib.json",
-        "assets": [
-          "libs/cms/core/*.md"
-        ]
+        "assets": ["libs/cms/core/*.md"]
       }
     },
     "publish": {
@@ -31,23 +27,23 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/cms/core/**/*.js"
-        ]
+        "lintFilePatterns": ["libs/cms/core/**/*.js"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/cms/core"
-      ],
+      "outputs": ["coverage/libs/cms/core"],
       "options": {
         "jestConfig": "libs/cms/core/jest.config.js",
         "passWithNoTests": true
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional"
       }
     }
   },
