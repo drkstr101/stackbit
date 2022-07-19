@@ -1,17 +1,54 @@
 
 # Stackbit
 
+This project was generated using [Nx](https://nx.dev).
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+
+🔎 **Smart, Fast and Extensible Build System**
+
 ## Narrative
 
 Awhile ago I was enrolled to evaluate the current state of the art in competing monorepo solutions. Prior to this endeavour, my understanding was that there were only two choices; one either chooses npm with lerna or yarn workspaces. Since this time, many new and exciting options have entered the scene.
 
 This setup represents what I feel to be best practices for _2021_ and beyond. Granted, this is highly subjective so I will do my best to highlight some of the pros and cons of this approach as compared to other arguably solid answers to this same question at a later time.
 
-This project was generated using [Nx](https://nx.dev).
+### Also ran's
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+Today there are many excellent choices for building a monorepo project, and it is most likely that any one of these will meet the direct requirements of a project, so it really just comes down to Developer Experience (DX). The problem is that DX is highly subjective and often speculative. We shall therefore define DX for our purposes here as a single numeric metric; Total Cost of Incidental Complexity (TCoIC), where incidental complexity is defined as any time or effort needed to support the actual feature work (the "overhead" to the solution).
 
-🔎 **Smart, Fast and Extensible Build System**
+#### Using the package managers
+
+- npm
+  - As of node 16, npm now supports a limited yarn-style workspace api
+  - Offers the greatest level of compatibility but lowest DX
+  - Most of the maintenance cost is on the dev to keep things in
+    sync and up to date
+- yarn (v1)
+  - The easiest to setup and get running right away
+  - Does not have any mechanism to run tasks on multiple targets
+    without explicitly chaining them together in the script target
+  - The goals of yarn workspaces are a bit different then those of
+    npm/lerna.
+  - Yarn focuses more on de-duplication and selecting the best possible
+    version from a range of explicit or implicit constraints.
+- yarn (v2)
+  - Yarn version 2 (Berry) is a whole different beast, deviating the
+    most from a more standard npm, lerna, or even yarn v1 setup. There
+    is even an option to rollup the entirety of `node_modules` into a single static javascript file. (`.pnp.js`)
+  - Arguably the greatest DX amongst the standard package-manager
+    provided solutions
+- pnpm
+  - a good middle ground between compatibility and state-of-the-art
+  - The most resource efficient solution
+  - Offers pretty much the same features as npm workspaces, only a
+    more polished DX
+
+#### Using special purpose frameworks
+
+- lerna
+- bit
+- nx <--- (the chosen winner)
 
 ## Adding capabilities to your workspace
 
