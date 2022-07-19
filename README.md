@@ -1,6 +1,11 @@
 
-
 # Stackbit
+
+## Narrative
+
+Awhile ago I was enrolled to evaluate the current state of the art in competing monorepo solutions. Prior to this endeavour, my understanding was that there were only two choices; one either chooses npm with lerna or yarn workspaces. Since this time, many new and exciting options have entered the scene.
+
+This setup represents what I feel to be best practices for _2021_ and beyond. Granted, this is highly subjective so I will do my best to highlight some of the pros and cons of this approach as compared to other arguably solid answers to this same question at a later time.
 
 This project was generated using [Nx](https://nx.dev).
 
@@ -49,7 +54,7 @@ Libraries are shareable across libraries and applications. They can be imported 
 
 ## Development server
 
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `nx serve my-app` for a dev server. Navigate to <http://localhost:4200/>. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -78,8 +83,6 @@ Run `nx graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
 
 ## ☁ Nx Cloud
 
