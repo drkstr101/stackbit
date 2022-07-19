@@ -15,7 +15,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@stackbit/types": ["libs/types/src/index.ts"]
+      "@stackbit/annotations": ["libs/annotations/src/index.ts"],
+      "@stackbit/cli": ["libs/stackbit/cli/src/index.ts"],
+      "@stackbit/cms-contentful": ["libs/cms/contentful/src/index.ts"],
+      "@stackbit/cms-core": ["libs/cms/core/src/index.js"],
+      "@stackbit/cms-git": ["libs/cms/git/src/index.js"],
+      "@stackbit/cms-sanity": ["libs/cms/sanity/src/index.ts"],
+      "@stackbit/dev": ["libs/stackbit/dev/src/index.ts"],
+      "@stackbit/sdk": ["libs/stackbit/sdk/src/index.ts"],
+      "@stackbit/types": ["libs/types/src/index.ts"],
+      "@stackbit/utils": ["libs/stackbit/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

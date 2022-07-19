@@ -2,9 +2,19 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "e2e": "apps/e2e",
+    "annotations": "libs/annotations",
+    "cms-contentful": "libs/cms/contentful",
+    "cms-core": "libs/cms/core",
+    "cms-git": "libs/cms/git",
+    "cms-sanity": "libs/cms/sanity",
+    "cypress": "apps/cypress",
+    "dev-common": "libs/dev/common",
     "stackbit-api": "apps/stackbit-api",
     "stackbit-app": "apps/stackbit-app",
+    "stackbit-cli": "libs/stackbit/cli",
+    "stackbit-dev": "libs/stackbit/dev",
+    "stackbit-sdk": "libs/stackbit/sdk",
+    "stackbit-utils": "libs/stackbit/utils",
     "types": "libs/types"
   }
 }
